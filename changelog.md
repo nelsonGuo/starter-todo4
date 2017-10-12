@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [0.0.] - 2017-10-12
+## [0.0.2]
+### Added
+- Tasks.php for connect with database(csv file) to application/models/ @Lenic
+
+### Changed
+- Base controller for team name @Lenic
+- autoload.php under application/config/ @Lenic
+
+## [0.0.1] - 2017-10-12
 ### Added
 - changelog.md @Lenic
