@@ -7,12 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ## [0.0.5]
-### Added and changed
-- changed autoload.php  @nelson
-- changed config.php  @nelson 
+### Added
 - new Helpme @nelson
 - new jobs.md @nelson
 - new Parsedown.php @nelson
+### changed
+- changed autoload.php  @nelson
+- changed config.php  @nelson 
 
 ## [0.0.4]
 ### Added
