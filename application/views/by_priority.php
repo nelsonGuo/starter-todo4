@@ -1,10 +1,10 @@
-<h3>Tasks by Category</h3>
+<h3>Tasks by Priority</h3>
 
 <table class="table">
         <tr>
                 <th>Id</th>
                 <th>Task</th>
-                <th>Category</th>
+                <th>Priority</th>
         </tr>
         {display_tasks}
         <tr>
