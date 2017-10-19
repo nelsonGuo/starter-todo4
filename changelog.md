@@ -6,12 +6,58 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.0]
+### Added
+- missing proporties @Lenic 
+
+## [0.0.9]
+### Added
+-itemadd @nelson
+-itemedit @nelson
+-oneitemx @nelson
+
+### Changed
+-Mtce @nelson
+-Momory_model @nelson
+-App  @nelson
+-Tasks @nelson
+
+
+## [0.0.8]
+### Added
+- user roles: Owner&Guest @Lenic
+- checkboxes to work view, can only be edited by owner @Lenic
+
+### Changed
+- update .gitignore to ignore application/controller/tmp folder @Lenic
+
+## [0.0.7]
+### Added
+- itemnav @nelson
+
+### Changed
+- Mtce @nelson
+- itemlist @nelson
+
+## [0.0.6]
+### Added
+- new mtce @nelson
+- new oneitem @nelson
+- new itemlist @nelson
+
+### Changed
+- config @nelson
+- by_category @nelson
+- by_priority @nelson
+- template_secondary @nelson
+
 ## [0.0.5]
 ### Added
 - new Helpme @nelson
 - new jobs.md @nelson
 - new Parsedown.php @nelson
-### changed
+
+### Changed
 - changed autoload.php  @nelson
 - changed config.php  @nelson 
 
