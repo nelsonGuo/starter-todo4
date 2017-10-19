@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.9]
+### Added
+-itemadd @nelson
+-itemedit @nelson
+-oneitemx @nelson
+
+### Changed
+-Mtce @nelson
+-Momory_model @nelson
+-App  @nelson
+-Tasks @nelson
+
+
 ## [0.0.8]
 ### Added
 - user roles: Owner&Guest @Lenic
