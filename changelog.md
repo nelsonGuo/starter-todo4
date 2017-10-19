@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.0]
+### Added
+- missing proporties @Lenic 
+
 ## [0.0.9]
 ### Added
 -itemadd @nelson
