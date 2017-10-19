@@ -8,8 +8,7 @@ class Mtce extends Application {
 
 		public function index()
 		{
-			$tasks = $this->tasks->all(); // get all the tasks
-			$this->show_page($tasks);
+			$this->page(1);
 		}
 
 		// Show a single page of todo items
@@ -48,7 +47,21 @@ class Mtce extends Application {
 				}
 				if ($count >= $this->items_per_page) break;
 			}
+			
+			$this->data['pagination'] = $this->pagenav($num);
 			$this->show_page($tasks);
+		}
+		
+		// Build the pagination navbar
+		private function pagenav($num) {
+			$lastpage = ceil($this->tasks->size() / $this->items_per_page);
+			$parms = array(
+				'first' => 1,
+				'previous' => (max($num-1,1)),
+				'next' => min($num+1,$lastpage),
+				'last' => $lastpage
+			);
+			return $this->parser->parse('itemnav',$parms,true);
 		}
 
 }
