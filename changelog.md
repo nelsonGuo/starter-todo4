@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.6]
+### Added
+- new mtce @nelson
+- new oneitem @nelson
+- new itemlist @nelson
+##changed
+- config @nelson
+- by_category @nelson
+- by_priority @nelson
+- template_secondary @nelson
+
 ## [0.0.5]
 ### Added
 - new Helpme @nelson
