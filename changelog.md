@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - new mtce @nelson
 - new oneitem @nelson
 - new itemlist @nelson
-##changed
+###changed
 - config @nelson
 - by_category @nelson
 - by_priority @nelson
