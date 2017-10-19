@@ -1,5 +1,4 @@
 <h3>Tasks by Priority</h3>
-
 <table class="table">
         <tr>
                 <th>Id</th>
@@ -10,7 +9,7 @@
         <tr>
             <td>{id}</td>
             <td>{task}</td>
-        <td>{group}</td>
+            <td>{priority}</td>
         </tr>
         {/display_tasks}    
 </table>
