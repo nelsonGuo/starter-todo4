@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+
+## [1.0.1]
+### Added
+- Entity.php @nelson
+- phpunit.xml.dist @nelson	
+- BootStrap.php @nelson	
+- TaskTest.php @nelson
+
+### Changed
+- My_model.php @nelson
+
+
 ## [1.0.0]
 ### Added
 - missing proporties @Lenic 
