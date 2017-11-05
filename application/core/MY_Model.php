@@ -1,5 +1,4 @@
 <?php
-
 // pull in the interface we are supposed to implement
 // Note that it doesn't have to follow the normal CodeIgniter naming rules!
 require_once 'DataMapper.php';
@@ -360,4 +359,3 @@ class MY_Model2 extends MY_Model
 include_once 'RDB_Model.php';	// backed by an RDB
 include_once 'Memory_Model.php';	// In-memory only
 include_once 'CSV_Model.php';	// CSV persisted
-include_once 'Entity.php';
