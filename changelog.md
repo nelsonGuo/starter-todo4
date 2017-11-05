@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.2]
+### Added
+- TaskListTest @Lenic
+- travis-ci configuration @Lenic
+
+### Changed
+- .gitignore @Lenic
 
 ## [1.0.1]
 ### Added
@@ -16,7 +23,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - My_model.php @nelson
-
 
 ## [1.0.0]
 ### Added
