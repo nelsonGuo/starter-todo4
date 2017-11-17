@@ -7,7 +7,7 @@
  * @copyright           Copyright (c) 2010-2017, James L. Parry
  * ------------------------------------------------------------------------
  */
-class CSV_Model extends Memory_Model
+class XML_Model extends Memory_Model
 {
 //---------------------------------------------------------------------------
 //  Housekeeping methods
@@ -36,7 +36,6 @@ class CSV_Model extends Memory_Model
 		// start with an empty collection
 		$this->_data = array(); // an array of objects
 		$this->fields = array(); // an array of strings
-		
 		// and populate the collection
 		$this->load();
 	}
@@ -48,29 +47,19 @@ class CSV_Model extends Memory_Model
 	protected function load()
 	{
 		//---------------------
-		if (($handle = fopen($this->_origin, "r")) !== FALSE)
-		{
-			$first = true;
-			while (($data = fgetcsv($handle)) !== FALSE)
-			{
-				if ($first)
-				{
-					// populate field names from first row
-					$this->_fields = $data;
-					$first = false;
+
+		$data = simplexml_load_file($this->_origin);
+
+			foreach ($data -> children() as $item) {
+				$record = new stdClass();
+				foreach ($item ->children() as  $row) {
+					$this->_fields[] =$row ->getName();
+					$record->{$row ->getName()} = (string)$row;
 				}
-				else
-				{
-					// build object from a row
-					$record = new stdClass();
-					for ($i = 0; $i < count($this->_fields); $i ++ )
-						$record->{$this->_fields[$i]} = $data[$i];
-					$key = $record->{$this->_keyfield};
-					$this->_data[$key] = $record;
-				}
+
+				$key = $record->{$this->_keyfield};
+				$this->_data[$key] = $record;
 			}
-			fclose($handle);
-		}
 		// --------------------
 		// rebuild the keys table
 		$this->reindex();
